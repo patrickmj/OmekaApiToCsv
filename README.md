@@ -1,7 +1,9 @@
 OmekaApiToCsv
 =============
 
-Simple conversion tool for data from Omeka API to CSV file
+Simple conversion tool for data from Omeka API to CSV file.
+
+Based on [ApiImport](https://github.com/omeka/plugin-ApiImport)
 
 Requirements
 ------------
