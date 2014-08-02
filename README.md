@@ -15,7 +15,7 @@ Usage
 
 Slap this up on your server someplace.
 
-Define an Omeka API endpoint in OmekaApiToCsv.php, then run the script. CSV export file will appear in the `files` folder.
+Define an Omeka API endpoint in `OmekaApiToCsv.php`, then run the script. CSV export file will appear in the `files` folder.
 
 Currently no authentication, so only public items will be exported.
 
