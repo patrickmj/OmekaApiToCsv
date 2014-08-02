@@ -3,8 +3,15 @@ OmekaApiToCsv
 
 Simple conversion tool for data from Omeka API to CSV file
 
+Requirements
+------------
+
+PHP 5.4
+
 Usage
 -----
+
+Slap this up on your server someplace.
 
 Define an Omeka API endpoint in OmekaApiToCsv.php, then run the script. CSV export file will appear in the `files` folder.
 
