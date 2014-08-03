@@ -57,7 +57,6 @@ class ItemAdapter extends AbstractRecordAdapter
                 $elementTexts[$elName] = $value;
             }
         }
-        print_r($elementTexts);
         return $elementTexts;
     }
 
