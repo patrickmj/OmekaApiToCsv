@@ -47,13 +47,17 @@ class ItemAdapter extends AbstractRecordAdapter
         if(!$responseData) {
             $responseData = $this->responseData;
         }
-
         foreach($responseData['element_texts'] as $elTextData) {
             $elId = $elTextData['element']['id'];
             $elName = $elTextData['element']['name'];
             $value = $elTextData['text'];
-            $elementTexts[$elName] = $value;
+            if (isset($elementTexts[$elName])) {
+                $elementTexts[$elName] = $elementTexts[$elName] . ',' . $value;
+            } else {
+                $elementTexts[$elName] = $value;
+            }
         }
+        print_r($elementTexts);
         return $elementTexts;
     }
 
