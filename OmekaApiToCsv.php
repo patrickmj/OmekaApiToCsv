@@ -38,6 +38,9 @@ class OmekaApiToCsvWriter
         
         $page = 1;
         $headings = array();
+		
+		// Add Record ID to $headings
+		$headings[] = 'Id';
         do {
             $response = $this->service->get(OMEKA_ENDPOINT . "/elements?page=$page");
             
