@@ -47,6 +47,10 @@ class ItemAdapter extends AbstractRecordAdapter
         if(!$responseData) {
             $responseData = $this->responseData;
         }
+		
+        // Set record id for current Item
+        $elementTexts['Id'] = $responseData['id'];
+		
         foreach($responseData['element_texts'] as $elTextData) {
             $elId = $elTextData['element']['id'];
             $elName = $elTextData['element']['name'];
